@@ -2,24 +2,25 @@ import React from "react";
 import PropTypes from 'prop-types';
 import Styles from './styles.module.scss'
 
-function Heading(
+function Paragraph(
     {
-        color = 'textPrimary',
-        variant='heading3',
+        variant = 'primary',
         ...props
     }
 ) {
     return (
         <>
-            <h4 className={`${Styles.heading} ${Styles[variant]}`}> {props.label} </h4>
+            <p className={`${Styles.paragraph} ${Styles[variant]}`} >
+                {props.label}
+            </p>
         </>
     );
 }
 
 
 
-Heading.propTypes = {
+Paragraph.propTypes = {
     label: PropTypes.string.isRequired,
 };
 
-export default Heading;
+export default Paragraph;

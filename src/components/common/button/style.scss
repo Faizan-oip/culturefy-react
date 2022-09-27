@@ -32,13 +32,13 @@ button.medium{
     min-width: 130px;
     padding: 8px 20px;
 }
-button.small{
+button.smallBtn{
     min-width: 70px;
     padding: 6px 10px;
 }
 button.qaBtn1 .btnIcon{
-    padding-right: 10px;
-    font-size: 12px;
+    padding-right: 5px;
+    font-size: 15px;
 }
 button.secondary:hover,
 button.primary{
@@ -79,11 +79,23 @@ button.outlined.secondary{
     color: #cf212f;
     border: 2px solid #cf212f;
 }
-button.transparent.gray{
+button.transparent{
     background-color: transparent;
-    color: #929292;
     border: none;
+    padding: 0;
+    min-width: auto;
 }
-button.transparent.gray:hover{
+
+button.gray{
+    color: #929292;
+}
+button.white:hover,
+button.gray:hover{
     color: #000;
+}
+button.whiteColor{
+    color: #fff;
+}
+button.darkGrayColor{
+    color: #4e5d78;
 }
