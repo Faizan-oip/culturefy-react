@@ -1,0 +1,33 @@
+.userImg45{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.imgFull {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recognitionUserMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recognitionUserMain{
+    font-size: 14px;
+    color: #3f414d;
+    margin: 10px 0;
+}
+.username{
+    font-weight: 600;
+    color: #000;
+}
+.time{
+    color: #929292;
+}
