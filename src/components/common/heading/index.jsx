@@ -11,7 +11,7 @@ function Heading(
 ) {
     return (
         <>
-            <h4 className={`${Styles.heading} ${Styles[variant]}`}> {props.label} </h4>
+            <h4 className={`${Styles.heading} ${Styles[variant]} ${Styles[props.border] }  ${Styles[color] } `}> {props.label} </h4>
         </>
     );
 }
@@ -20,6 +20,9 @@ function Heading(
 
 Heading.propTypes = {
     label: PropTypes.string.isRequired,
+    variant: PropTypes.string,
+    color: PropTypes.string,
+    border: PropTypes.string,
 };
 
 export default Heading;

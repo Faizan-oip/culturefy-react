@@ -33,12 +33,12 @@ button.medium{
     padding: 8px 20px;
 }
 button.smallBtn{
-    min-width: 70px;
+    min-width: 100px;
     padding: 6px 10px;
 }
 button.qaBtn1 .btnIcon{
     padding-right: 5px;
-    font-size: 15px;
+    font-size: 12px;
 }
 button.secondary:hover,
 button.primary{
@@ -74,6 +74,7 @@ button.outlined.primary{
     color: #2394ae;
     border: 2px solid #2394ae;
 }
+button.followBtn:hover,
 button.outlined.primary:hover,
 button.outlined.secondary{
     color: #cf212f;
@@ -98,4 +99,17 @@ button.whiteColor{
 }
 button.darkGrayColor{
     color: #4e5d78;
+}
+button.followBtn{
+    background-color: transparent;
+    border: 2px solid #2394ae;
+    color: #2394ae;
+    font-size: 10px;
+    min-width: 120px;
+}
+button.followBtn:hover{
+    background-color: transparent;
+}
+button.followBtn .btnIcon{
+    font-size: 10px;
 }

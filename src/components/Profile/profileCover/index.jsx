@@ -35,7 +35,8 @@ function ProfileCover(props) {
             <Button
               label='More'
               variant='outlined'
-              color='transparent'
+              color='black'
+              size='smallBtn'
             />
           </div>
         </div>
