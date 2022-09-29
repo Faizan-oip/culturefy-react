@@ -62,7 +62,7 @@ function Posts(
             {
               props.lessonNextBtn ?
                 <div>
-                  <Button label={props.lessonNextBtn} variant='transparent' color='gray' icon={props.lessonNextBtnIcon} />
+                  <Button label={props.lessonNextBtn} variant='transparent' color='gray' icon={ <FontAwesomeIcon icon={props.lessonNextBtnIcon} /> } />
                 </div> : ''
             }
           </div>

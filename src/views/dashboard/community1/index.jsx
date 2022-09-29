@@ -50,7 +50,7 @@ const Community1 = () => {
                                     partNumber='1'
                                     partName='Introduction'
                                     lessonNextBtn='Watch Part 2'
-                                    lessonNextBtnIcon={ <FontAwesomeIcon icoon={faArrowRight} /> }
+                                    lessonNextBtnIcon={faArrowRight}
                                     reactedUserImg={inst4Img}
                                     commentsCount='0'
                                     shareCount='0'
