@@ -1,9 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types';
 import Styles from './styles.module.scss'
 import Heading from '../../common/heading';
 import Paragraph from '../../common/paragraph';
 import Skill from '../../common/Skill';
+
+import { GiWorld } from 'react-icons/gi';
+import { FaRegLightbulb } from 'react-icons/fa';
+
 function Mentorship() {
   return (
     <div className={Styles.mentorshipCard}>
@@ -13,22 +16,17 @@ function Mentorship() {
       />
       <Heading label='Professional Skills' variant='heading4' />
       <ul className={Styles.menList}>
-        <Skill icon='fa-regular fa-lightbulb' label='Writing' />
-        <Skill icon='fa-regular fa-lightbulb' label='Attention to Detail' />
-        <Skill icon='fa-regular fa-lightbulb' label='Strong Vocabulary' />
+        <Skill icon={<FaRegLightbulb />} label='Writing' />
+        <Skill icon={<FaRegLightbulb />} label='Attention to Detail' />
+        <Skill icon={<FaRegLightbulb />} label='Strong Vocabulary' />
       </ul>
       <Heading label='Life Experiences' variant='heading4' />
       <ul className={Styles.menList}>
-        <Skill icon='fa-solid fa-earth-americas' label='Overcoming adversity' />
-        <Skill icon='fa-solid fa-earth-americas' label='Getting a graduate degree' />
-        <Skill icon='fa-solid fa-earth-americas' label='Being passed on a promotion' />
+        <Skill icon={<GiWorld />} label='Overcoming adversity' />
+        <Skill icon={<GiWorld />} label='Getting a graduate degree' />
+        <Skill icon={<GiWorld />} label='Being passed on a promotion' />
       </ul>
     </div>
   )
 }
-Mentorship.propTypes = {
-  // variant: PropTypes.string,
-  // count: PropTypes.string.isRequired,
-  // text: PropTypes.string.isRequired,
-};
 export default Mentorship

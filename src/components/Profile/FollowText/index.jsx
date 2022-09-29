@@ -10,12 +10,7 @@ function ProfileCount(
   return (
     <div className={Styles.countDiv}>
       <span
-        className={
-          ` ${Styles.count} ${variant === 'primary' ? Styles.primary : ''} 
-            ${variant === 'secondary' ? Styles.secondary : ''} 
-            ${variant === 'yellow' ? Styles.yellow : ''} 
-            ${variant === 'gray' ? Styles.gray : ''}`
-        }>
+        className={` ${Styles.count} ${Styles[variant]} `}>
         {props.count}
       </span>
       <span className={Styles.text}>

@@ -1,12 +1,13 @@
 
-button should ke variat support with theme primary and seconday color
-button should be loading state support
-button have disable props
-
+Event should ownerImg of Event
+Event should have Event Title
+Event should have Event Details
+Event should have Event Seen by Users
+Event should have Images of Event Seened Users
 Props {
-    variant?: 'filled' | 'outline' | '',
-    isLoading?: Bool,
-    disable?: Bool,
-    icon?: <Icon />,
-    label: string,
+    ownerImg: any(Image)?,
+    seenedUser: any(Image)?,
+    eventTitle: string?,
+    eventDetails: string?,
+    eventSeen: number?,
 }

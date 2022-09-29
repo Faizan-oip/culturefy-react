@@ -5,7 +5,9 @@ import Styles from './styles.module.scss'
 function Skill(props) {
     return (
         <li className={Styles.skillItem}>
-            <i className={props.icon}></i>
+            <span className={Styles.icon}>
+                {props.icon}
+            </span>
             <span> {props.label} </span>
         </li>
     );
@@ -14,7 +16,7 @@ function Skill(props) {
 
 
 Skill.propTypes = {
-    icon: PropTypes.string.isRequired,
+    icon: PropTypes.any.isRequired,
     label: PropTypes.string.isRequired,
 };
 

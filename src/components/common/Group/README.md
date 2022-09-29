@@ -1,12 +1,7 @@
-
-button should ke variat support with theme primary and seconday color
-button should be loading state support
-button have disable props
+Group should have group image
+Group should have group name
 
 Props {
-    variant?: 'filled' | 'outline' | '',
-    isLoading?: Bool,
-    disable?: Bool,
-    icon?: <Icon />,
-    label: string,
+    grpImage: any(Image)?,
+    groupName: string?,
 }

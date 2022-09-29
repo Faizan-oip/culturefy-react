@@ -4,7 +4,7 @@ import Styles from './styles.module.scss'
 
 function Heading(
     {
-        color = 'textPrimary',
+        color = 'primaryText',
         variant='heading3',
         ...props
     }

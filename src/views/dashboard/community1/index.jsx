@@ -20,6 +20,8 @@ import inst4Img from '../../../assets-qa/images/inst4.png'
 import inst5Img from '../../../assets-qa/images/inst5.png'
 
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/fontawesome-free-solid'
 
 const Community1 = () => {
     return (
@@ -39,7 +41,7 @@ const Community1 = () => {
                             <Col sm={8}>
                                 <CreatePost variant='primary' />
                                 <Posts
-                                    postOwnerImg={coverImg}
+                                    postOwnerImg={inst3Img}
                                     postOwner='You'
                                     postTime='Just Now'
                                     postImg={coverImg}
@@ -48,20 +50,20 @@ const Community1 = () => {
                                     partNumber='1'
                                     partName='Introduction'
                                     lessonNextBtn='Watch Part 2'
-                                    lessonNextBtnIcon='fa-solid fa-arrow-right'
-                                    reactedUserImg={coverImg}
+                                    lessonNextBtnIcon={ <FontAwesomeIcon icoon={faArrowRight} /> }
+                                    reactedUserImg={inst4Img}
                                     commentsCount='0'
                                     shareCount='0'
-                                    currentUserImg={coverImg}
+                                    currentUserImg={inst3Img}
                                 />
                                 <Posts
-                                    postOwnerImg={coverImg}
+                                    postOwnerImg={inst3Img}
                                     postOwner='You'
                                     postTime='32 mins ago'
-                                    reactedUserImg={coverImg}
+                                    reactedUserImg={inst4Img}
                                     commentsCount='0'
                                     shareCount='0'
-                                    currentUserImg={coverImg}
+                                    currentUserImg={inst3Img}
                                     postText=' I would like to Kudos @Carla, for the #courteousness in every appointment, and deadlines throughout the month of may '
                                 />
                             </Col>

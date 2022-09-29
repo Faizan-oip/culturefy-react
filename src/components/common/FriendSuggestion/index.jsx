@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import Styles from './styles.module.scss'
-import Heading from "../heading";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/fontawesome-free-solid'
 import Button from "../button";
 
 function FriendSuggestion(props) {
@@ -12,8 +13,17 @@ function FriendSuggestion(props) {
             </div>
             <div className={Styles.userDetails}>
                 <h4> {props.userName} </h4>
-                <p> {props.courcesCount} Courses {props.videosCount} Videos </p>
-                <Button label={`Follow ${props.userName.split(' ')[0]}`} icon='fas fa-plus' size="smallBtn" variant="followBtn" />
+                {
+                    props.courcesCount && 
+                    <p>
+                        <span> {props.courcesCount} Courses </span>
+                        {
+                            props.videosCount && <span> {props.videosCount} Videos </span>
+                        }
+                    </p>
+                }
+                {/* <p> {props.courcesCount} Courses {props.videosCount} Videos </p> */}
+                <Button label={`Follow ${props.userName.split(' ')[0]}`} icon={<FontAwesomeIcon icon={faPlus} />} size="smallBtn" variant="followBtn" />
             </div>
         </div>
     );
@@ -24,7 +34,7 @@ function FriendSuggestion(props) {
 FriendSuggestion.propTypes = {
     userImg: PropTypes.any.isRequired,
     userName: PropTypes.string.isRequired,
-    courcesCount: PropTypes.string.isRequired,
-    videosCount: PropTypes.string.isRequired,
+    courcesCount: PropTypes.number,
+    videosCount: PropTypes.number,
 };
 export default FriendSuggestion;

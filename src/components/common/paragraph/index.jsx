@@ -21,6 +21,7 @@ function Paragraph(
 
 Paragraph.propTypes = {
     label: PropTypes.string.isRequired,
+    variant: PropTypes.string,
 };
 
 export default Paragraph;

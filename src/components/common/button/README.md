@@ -1,12 +1,15 @@
-
-button should ke variat support with theme primary and seconday color
-button should be loading state support
+button should have variat support with theme primary and seconday color
+button should have loading state support
 button have disable props
+button have size props
+button have color props 
 
 Props {
-    variant?: 'filled' | 'outline' | '',
+    variant?: 'filled' | 'outline' | 'transparent' | 'followBtn' '',
     isLoading?: Bool,
     disable?: Bool,
+    size?: string,
     icon?: <Icon />,
     label: string,
+    color: string , 'gray' | 'darkGrayColor' | 'whiteColor' | ,
 }

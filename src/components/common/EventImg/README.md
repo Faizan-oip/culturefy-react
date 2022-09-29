@@ -1,12 +1,4 @@
-
-button should ke variat support with theme primary and seconday color
-button should be loading state support
-button have disable props
-
+Event should have Event Image
 Props {
-    variant?: 'filled' | 'outline' | '',
-    isLoading?: Bool,
-    disable?: Bool,
-    icon?: <Icon />,
-    label: string,
+    eventImage: any(Image)?,
 }

@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import Styles from './styles.module.scss'
 import Input from '../../common/Input';
 import Button from '../../common/button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaMoneyBillWave } from 'react-icons/fa';
+import {  faVideo , faImage , faSmile , faFile , faCalendar } from '@fortawesome/fontawesome-free-solid'
+
 function CreatePost(
   {
     variant = 'primary',
@@ -19,37 +23,43 @@ function CreatePost(
               label='Reward'
               variant='transparent'
               color='whiteColor'
-              icon='fa-solid fa-money-bill-1-wave'
+              // icon='fa-solid fa-money-bill-1-wave'
+              icon={<FaMoneyBillWave />}
             />
             <Button
               label='Live Video'
               variant='transparent'
               color='whiteColor'
-              icon='fa-solid fa-video'
+              // icon='fa-solid fa-video'
+              icon={<FontAwesomeIcon icon={faVideo} />}
             />
             <Button
               label='Photo/Video'
               variant='transparent'
               color='whiteColor'
-              icon='fa-solid fa-image'
+              // icon='fa-solid fa-image'
+              icon={<FontAwesomeIcon icon={faImage} />}
             />
             <Button
               label='Kudos'
               variant='transparent'
               color='whiteColor'
-              icon='fa-solid fa-face-smile'
+              // icon='fa-solid fa-face-smile'
+              icon={<FontAwesomeIcon icon={faSmile} />}
             />
             <Button
               label='Gif'
               variant='transparent'
               color='whiteColor'
-              icon='fa-solid fa-file'
+              // icon='fa-solid fa-file'
+              icon={<FontAwesomeIcon icon={faFile} />}
             />
             <Button
               label='Event'
               variant='transparent'
               color='whiteColor'
-              icon='fa-solid fa-calendar-days'
+              // icon='fa-solid fa-calendar-days'
+              icon={<FontAwesomeIcon icon={faCalendar} />}
             />
           </div>
           <Button
@@ -66,7 +76,7 @@ function CreatePost(
 }
 
 CreatePost.propTypes = {
-  // userImg: PropTypes.any,
+  variant: PropTypes.string.isRequired,
 };
 
 

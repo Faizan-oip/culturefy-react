@@ -4,6 +4,12 @@ import Styles from './styles.module.scss'
 import IconButton from '../../common/iconButton';
 import Button from '../../common/button';
 import Input from '../../common/Input';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEllipsisV, faMoneyBill, faComment, faShare, faPaperPlane} from '@fortawesome/fontawesome-free-solid'
+
+import { FaRegPaperPlane } from 'react-icons/fa';
+
 function Posts(
   {
     variant = 'primary',
@@ -23,7 +29,8 @@ function Posts(
             <p> {props.postTime} </p>
           </div>
         </div>
-        <IconButton icon='fa-solid fa-ellipsis' />
+        <IconButton icon={<FontAwesomeIcon icon={faEllipsisV} />} />
+        
       </div>
 
       {
@@ -85,19 +92,19 @@ function Posts(
           label='Like'
           variant='transparent'
           color='darkGrayColor'
-          icon='fa-solid fa-money-bill-1-wave'
+          icon={<FontAwesomeIcon icon={faMoneyBill} />}
         />
         <Button
           label='Comments'
           variant='transparent'
           color='darkGrayColor'
-          icon='fa-solid fa-comment'
+          icon={<FontAwesomeIcon icon={faComment} />}
         />
         <Button
           label='Share'
           variant='transparent'
           color='darkGrayColor'
-          icon='fa-sharp fa-solid fa-share'
+          icon={<FontAwesomeIcon icon={faShare} />}
         />
       </div>
 
@@ -108,7 +115,7 @@ function Posts(
         <div className={Styles.commentInp}>
           <Input placeholder='Write a comment' variant='offWhite' />
         </div>
-        <IconButton background='primary' icon='fa-regular fa-paper-plane' />
+        <IconButton variant='primary' icon={<FaRegPaperPlane />} />
       </div>
 
     </div>

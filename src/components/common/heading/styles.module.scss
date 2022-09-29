@@ -12,10 +12,17 @@ h4.heading4{
 h4.heading5{
     font-size: 15px;
 }
-.textPrimary{
+.primaryText{
     color: #3f414d;
+}
+.secondaryText{
+    color: #000;
 }
 .bottom{
     padding-bottom: 10px;
     border-bottom: 2px solid #e8eaee;
+}
+.top{
+    padding-top: 10px;
+    border-top: 2px solid #e8eaee;
 }

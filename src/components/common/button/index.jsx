@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import './style.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpinner } from '@fortawesome/fontawesome-free-solid'
+import Styles from './styles.module.scss'
 
 function Button(
     {
@@ -15,13 +17,12 @@ function Button(
     return (
         <button
             disabled={disable}
-            className={`qaBtn1 ${variant} ${color} ${size} ${isLoading ? "isLoading" : ""} 
-         `}
+            className={`${Styles.qaBtn1} ${Styles[variant] } ${Styles[color]} ${Styles[size]}  ${isLoading ? Styles.isLoadinga : Styles.notLoading} `}
             onClick={props.onClick}
         >
-            {props.icon ? <span className="btnIcon"><i className={props.icon}> </i></span> : ""}
+            {props.icon ? <span className={Styles.btnIcon}>   {props.icon} </span> : ""}
             <span>{props.label}</span>
-            {isLoading ? <span className='spinner'> <i class="fas fa-spinner"></i> </span> : ""}
+            {isLoading ? <span className={Styles.spinner}> <FontAwesomeIcon icon={faSpinner} />  </span> : ""}
         </button>
     );
 }
@@ -30,9 +31,10 @@ function Button(
 
 Button.propTypes = {
     variant: PropTypes.string,
+    size: PropTypes.string,
     isLoading: PropTypes.bool,
     onClick: PropTypes.func,
-    icon: PropTypes.string,
+    icon: PropTypes.any,
     color: PropTypes.string,
     disable: PropTypes.bool,
     label: PropTypes.string.isRequired,

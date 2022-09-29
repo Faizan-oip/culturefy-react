@@ -20,17 +20,20 @@ function Event(props) {
             </div>
             <div className={`${Styles.eventAnalytic} ${Styles.dflexBt}`}>
                 <span> {props.eventSeen} Seen </span>
-                <span className={Styles.allImgs}>
-                    <div className={Styles.userImgsm}>
-                        <img src={props.seenedUser} alt='user' />
-                    </div>
-                    <div className={Styles.userImgsm}>
-                        <img src={props.seenedUser} alt='user' />
-                    </div>
-                    <div className={Styles.userImgsm}>
-                        <img src={props.seenedUser} alt='user' />
-                    </div>
-                </span>
+                {
+                    props.seenedUser && 
+                    <span className={Styles.allImgs}>
+                        <div className={Styles.userImgsm}>
+                            <img src={props.seenedUser} alt='user' />
+                        </div>
+                        <div className={Styles.userImgsm}>
+                            <img src={props.seenedUser} alt='user' />
+                        </div>
+                        <div className={Styles.userImgsm}>
+                            <img src={props.seenedUser} alt='user' />
+                        </div>
+                    </span>
+                }
             </div>
         </div>
     );
@@ -39,9 +42,9 @@ function Event(props) {
 
 Event.propTypes = {
     ownerImg: PropTypes.any.isRequired,
-    eventTitle: PropTypes.string,
-    eventDetails: PropTypes.string,
-    eventSeen: PropTypes.number,
+    eventTitle: PropTypes.string.isRequired,
+    eventDetails: PropTypes.string.isRequired,
+    eventSeen: PropTypes.number.isRequired,
     seenedUser: PropTypes.any,
 };
 export default Event;

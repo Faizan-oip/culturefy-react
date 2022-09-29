@@ -1,12 +1,13 @@
-
-button should ke variat support with theme primary and seconday color
-button should be loading state support
-button have disable props
+Input should have variat white and offWhite BACKGROUND color
+Input can have disable props
+Input can have type props
+Input can have color props 
+Input can have placeholder props 
 
 Props {
-    variant?: 'filled' | 'outline' | '',
-    isLoading?: Bool,
+    variant?: 'white' | 'offWhite' ,
     disable?: Bool,
-    icon?: <Icon />,
-    label: string,
+    type: string, '' 'text' | 'email' | 'date' | 'number' | 'password' ,
+    color: string , ,'gray' , 'black' ,
+    placeholder?:  string ,
 }
