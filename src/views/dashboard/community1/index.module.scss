@@ -64,11 +64,16 @@ ul{
 
 
 
-div .profileFeed{
-	margin-top: 50px;
+div{
+    .profileFeed{
+        margin-top: 50px;
+    }
 }
 .friendRecom{
     padding: 10px 5px;
     border-bottom: 2px solid #e8eaee;
     border-top: 2px solid #e8eaee;
+}
+.containerMain{
+    padding-bottom: 100px;
 }

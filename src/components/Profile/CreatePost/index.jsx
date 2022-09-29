@@ -10,7 +10,6 @@ import {  faVideo , faImage , faSmile , faFile , faCalendar } from '@fortawesome
 function CreatePost(
   {
     variant = 'primary',
-    ...props
   }
 ) {
   return (
@@ -76,7 +75,7 @@ function CreatePost(
 }
 
 CreatePost.propTypes = {
-  variant: PropTypes.string.isRequired,
+  variant: PropTypes.string,
 };
 
 

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import adminImg from '../../../assets-qa/images/admin-img.png'
 
 import BasicInfo from '../BasicInfo';
-import ProfileCount from '../FollowText';
+import ProfileCount from '../ProfileCount';
 import Button from '../../common/button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

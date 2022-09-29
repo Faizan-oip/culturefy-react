@@ -1,4 +1,6 @@
 import { Row, Col, Container } from 'react-bootstrap'
+import Styles from './index.module.scss'
+
 import Group from '../../../components/common/Group'
 import Heading from '../../../components/common/heading'
 import CreatePost from '../../../components/Profile/CreatePost'
@@ -6,7 +8,6 @@ import Mentorship from '../../../components/Profile/Mentorship'
 import Posts from '../../../components/Profile/Posts'
 import ProfileCover from '../../../components/Profile/profileCover'
 import Recognition from '../../../components/Profile/Recognition'
-import Styles from './index.module.scss'
 import FriendSuggestion from '../../../components/common/FriendSuggestion'
 import EventImg from '../../../components/common/EventImg'
 import Event from '../../../components/common/Event'
@@ -20,13 +21,13 @@ import inst4Img from '../../../assets-qa/images/inst4.png'
 import inst5Img from '../../../assets-qa/images/inst5.png'
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { faArrowRight } from '@fortawesome/fontawesome-free-solid'
 
 const Community1 = () => {
     return (
         <>
-            <Container>
+            <Container className={Styles.containerMain}>
                 <Row>
                     <Col sm={10}>
                         <ProfileCover userCoverImg={coverImg} />
