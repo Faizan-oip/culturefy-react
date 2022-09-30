@@ -15,7 +15,31 @@
     }
   }
   .grpName{
-    font-size: 15px;
-    color: #000000;
+    h4{
+      color: #000000;
+    }
+    p{
+      color: #959595;
+    }
+  }
+}
+.Group.small{
+  .grpName{
+    h4{
+      font-size: 15px;
+    }
+    p{
+      font-size: 13px;
+    }
+  }
+}
+.Group.larger{
+  .grpName{
+    h4{
+      font-size: 22px;
+    }
+    p{
+      font-size: 16px;
+    }
   }
 }
