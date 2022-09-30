@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import Styles from './styles.module.scss'
 
+
 function RecognitionUser(props) {
   return (
     <div className={Styles.recognitionUserMain}>
@@ -11,7 +12,11 @@ function RecognitionUser(props) {
         </div>
         <span className={Styles.username}> {props.username} </span>
       </div>
-      <span className={Styles.time}> {props.time} </span>
+      <span className={`${Styles.time} ${props.time === 'online' ? Styles.online : ''} `}>
+        {
+          props.time === 'online' ? '' : props.time
+        }
+      </span>
     </div>
   )
 }

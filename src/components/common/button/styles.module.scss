@@ -86,13 +86,24 @@ button.outlined.secondary{
     color: #cf212f;
     border: 2px solid #cf212f;
 }
+button.transparent:hover,
 button.transparent{
     background-color: transparent;
     border: none;
     padding: 0;
-    min-width: auto;
+    // min-width: auto;
 }
-
+button.sizeAuto{
+    min-width: unset;
+}
+button.transparent.secondary:hover,
+button.transparent.primary{
+    color: #2394ae;
+}
+button.transparent.primary:hover,
+button.transparent.secondary{
+    color: #cf212f;
+}
 button.gray{
     color: #929292;
 }
