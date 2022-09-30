@@ -12,7 +12,7 @@ import { FaRegPaperPlane } from 'react-icons/fa';
 
 function Posts(
   {
-    variant = 'primary',
+    // variant = 'primary',
     ...props
   }
 ) {
@@ -127,7 +127,16 @@ Posts.propTypes = {
   postOwner: PropTypes.string.isRequired,
   postTime: PropTypes.string.isRequired,
   postImg: PropTypes.any,
-
+  postText:  PropTypes.string,
+  lessonNumber:  PropTypes.number,
+  lessonName:  PropTypes.string,
+  partNumber:  PropTypes.string,
+  lessonNextBtn:  PropTypes.string,
+  lessonNextBtnIcon: PropTypes.any,
+  reactedUserImg:  PropTypes.any,
+  commentsCount:  PropTypes.number.isRequired,
+  shareCount:  PropTypes.number.isRequired,
+  currentUserImg:  PropTypes.any.isRequired
 };
 
 
