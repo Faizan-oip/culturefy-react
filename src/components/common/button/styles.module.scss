@@ -40,6 +40,12 @@ button.smallBtn{
     min-width: 100px;
     padding: 6px 10px;
 }
+button.large{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 20px;
+}
 button.qaBtn1 {
     .btnIcon{
         padding-right: 5px;

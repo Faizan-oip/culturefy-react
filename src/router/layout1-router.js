@@ -58,8 +58,7 @@ const Layout1Router = () => {
                 <Route path="/dashboards/profiles/profile3" component={Profile3} />
 
 
-                {/* Sign Up Routes  */}
-                <Route path="/dashboards/main" component={Main} />
+                
 
 
                 

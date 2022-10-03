@@ -10,6 +10,7 @@ import WithoutLeftSidebar from '../layouts/dashboard/without-leftsidebar'
 import WithoutRightSidebar from '../layouts/dashboard/without-rightsidebar'
 import Layout1 from '../layouts/dashboard/layout-1'
 import Simple from '../layouts/dashboard/simple'
+import AuthLayout from '../layouts/dashboard/Auth'
 
 const IndexRouters = () => {
     return (
@@ -21,7 +22,8 @@ const IndexRouters = () => {
                 <Route path="/errors" component={Simple}></Route>
                 <Route path="/extra-pages" component={Simple}></Route>
                 <Route path="/dashboards" component={Layout1}></Route>
-                <Route path="/" component={Default}></Route>
+                <Route path="/dashboard" component={Default}></Route>
+                <Route path="*" component={<h1>Not found</h1>}></Route>
             </Switch>
         </>
     )

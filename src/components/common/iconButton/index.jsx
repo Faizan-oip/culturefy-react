@@ -27,7 +27,7 @@ function IconButton(
 IconButton.propTypes = {
     variant: PropTypes.string,
     isLoading: PropTypes.bool,
-    onClick: PropTypes.func,
+    onClick: PropTypes.any,
     icon: PropTypes.any.isRequired,
     disable: PropTypes.bool,
     color: PropTypes.string,

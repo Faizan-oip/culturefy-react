@@ -33,7 +33,7 @@ Button.propTypes = {
     variant: PropTypes.string,
     size: PropTypes.string,
     isLoading: PropTypes.bool,
-    onClick: PropTypes.func,
+    onClick: PropTypes.any,
     icon: PropTypes.any,
     color: PropTypes.string,
     disable: PropTypes.bool,

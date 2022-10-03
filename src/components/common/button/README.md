@@ -5,11 +5,11 @@ button have size props
 button have color props 
 
 Props {
-    variant?: 'filled' | 'outline' | 'transparent' | 'followBtn' '',
-    isLoading?: Bool,
-    disable?: Bool,
-    size?: string,
-    icon?: <Icon />,
-    label: string,
+    variant: 'filled' | 'outline' | 'transparent' | 'followBtn' '',
+    isLoading: Bool,
+    disable: Bool,
+    size: string, 'smallBtn' | 'medium' | 'large' | ,
+    icon: <Icon />,
+    label?: string,
     color: string , 'gray' | 'darkGrayColor' | 'whiteColor' | ,
 }
