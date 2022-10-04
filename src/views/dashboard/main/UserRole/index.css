@@ -821,11 +821,11 @@ input:focus{
     justify-content: space-around;
     cursor: pointer;
 }
-.signForm,
+/* .signForm,
 .slideQa{
     display: block;
     width: 50%;
-}
+} */
 .text-white-qa{
     color: #fff;
 }

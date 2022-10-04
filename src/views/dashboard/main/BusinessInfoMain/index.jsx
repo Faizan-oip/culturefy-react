@@ -1,7 +1,10 @@
 import { useState } from "react";
-import BusinessInfo1 from "./BusinessInfo1";
-import BusinessInfo2 from "./BusinessInfo2";
-import BusinessInfo3 from "./BusinessInfo3";
+import BusinessInfo1 from "../BusinessInfo1";
+import BusinessInfo2 from "../BusinessInfo2";
+import BusinessInfo3 from "../BusinessInfo3";
+
+
+import Styles from './styles.module.scss'
 
 const Comp = () => {
    const [step, setStep] = useState(1);
@@ -36,10 +39,8 @@ const Comp = () => {
 const BusinessInfoMain = () => {
    return (
       <>
-         <div className="signForm">
-            <div className="d-flex flex-column h-100 justify-content-center second-column-signup-pages">
-               <Comp />
-            </div>
+         <div className={Styles.businessInfoMain}>
+            <Comp />
          </div>
       </>
    );
