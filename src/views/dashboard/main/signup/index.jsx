@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
+import { faEnvelope, faUser, faLock } from '@fortawesome/fontawesome-free-solid'
+
 import goggleImg from '../../../../assets-ze/images/image-sliders/Google.png'
 import TextFieldQa from '../../../../components/common/textFieldQa';
 import Button from '../../../../components/common/button';
@@ -26,20 +28,29 @@ const SignUp = () => {
                </div>
                <div className={Styles.signUpForm}>
                   <TextFieldQa
-                     icon={<FontAwesomeIcon icon={faTwitter} />}
+                     icon={<FontAwesomeIcon icon={faEnvelope} />}
                      placeholder='youremail@gmail.com'
                      type='email'
                   />
                   <TextFieldQa
-                     icon={<FontAwesomeIcon icon={faTwitter} />}
+                     icon={<FontAwesomeIcon icon={faUser} />}
                      placeholder='username21'
                   />
                   <TextFieldQa
-                     icon={<FontAwesomeIcon icon={faTwitter} />}
+                     icon={<FontAwesomeIcon icon={faLock} />}
                      placeholder='********'
                      type='password'
                   />
-                  <p className={Styles.rememText}>Remember me next time</p>
+
+                  <p className={`${Styles.rememText} ${Styles.dFlexRow}`}>
+                     <span>
+                        Remember me next time
+                     </span>
+                     <div class="custom-checkbox">
+                        <input type="checkbox" id="remember-me" name="remember-me" />
+                        <label htmlFor="remember-me" class="remember-custom"></label>
+                     </div>
+                  </p>
                   <Button
                      variant='filled'
                      color='secondary'
@@ -49,10 +60,12 @@ const SignUp = () => {
                   <p className={Styles.rememText}>Forget password</p>
                   <p className={Styles.rememText}>
                      Already have an account?
-                     <Link to={'/auth/signin'}>
-                        Sign in
-                     </Link>
-                   </p>
+                     <span>
+                        <Link to={'/auth/signin'} className={Styles.cSecondary}>
+                           Sign in
+                        </Link>
+                     </span>
+                  </p>
 
                </div>
             </div>

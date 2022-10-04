@@ -7,7 +7,7 @@ import TextFieldQa from '../../../../components/common/textFieldQa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/fontawesome-free-solid'
 
-import '../index.css'
+// import '../index.css'
 
 
 const BusinessInfo2 = (props) => {

@@ -29,7 +29,6 @@ import Profile3 from '../views/dashboard/profiles/profile3';
 import Community from '../views/dashboard/community';
 import Community1 from '../views/dashboard/community1';
 import ResourceGroup from '../views/dashboard/community1/resourceGroup';
-import Main from '../views/dashboard/main';
 // const Community = React.lazy(() => import('../views/dashboard/community'));
 
 const Layout1Router = () => {

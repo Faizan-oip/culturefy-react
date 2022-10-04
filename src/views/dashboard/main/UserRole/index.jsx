@@ -4,14 +4,14 @@ import Button from "../../../../components/common/button";
 import Heading from "../../../../components/common/heading";
 
 import { Link } from "react-router-dom";
-import "./index.css";
+import Styles from "./styles.module.scss";
 
 
 const UserRole = () => {
    return (
       <>
          <div className="align-items-center d-flex flex-column h-100 justify-content-center second-column-signup-pages">
-            <div className=" w-100 text-center mx-w-571">
+            <div className={Styles.userRoleMain}>
                <Heading label='Sign Up' variant='heading1' color='secondaryText' />
                <div className="buttons-signup-login">
                   <Link to={'/auth/businessInfo'}>
@@ -32,7 +32,12 @@ const UserRole = () => {
                         icon={<img src={require('../../../../assets-ze/icons/people.png')} alt="" />}
                      />
                   </Link>
-                  <p className='already-have-acc'>Already have an account? <a href='signin.html'>Sign in</a> </p>
+                  <p className={Styles.alreadyHaveAcc}>
+                     Already have an account?
+                     <Link to={'/auth/signin'} >
+                        Sign in
+                     </Link>
+                  </p>
                </div>
             </div>
          </div>

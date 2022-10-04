@@ -15,7 +15,6 @@ import Error500 from "../views/dashboard/errors/error500";
 //extrpages
 import Maintenance from "../views/dashboard/extrapages/maintenance";
 import ComingSoon from "../views/dashboard/extrapages/comingsoon";
-import Main from "../views/dashboard/main";
 import AuthLayout from "../layouts/dashboard/Auth";
 import UserRole from "../views/dashboard/main/UserRole";
 import BusinessInfoMain from "../views/dashboard/main/BusinessInfoMain";
