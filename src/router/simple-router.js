@@ -17,6 +17,7 @@ import Maintenance from "../views/dashboard/extrapages/maintenance";
 import ComingSoon from "../views/dashboard/extrapages/comingsoon";
 import Main from "../views/dashboard/main";
 import AuthLayout from "../layouts/dashboard/Auth";
+import UserRole from "../views/dashboard/main/UserRole";
 
 const SimpleRouter = () => {
   return (
@@ -40,6 +41,7 @@ const SimpleRouter = () => {
         {/* Sign Up Routes  */}
         <AuthLayout>
           <Route path="/auth/main" component={Main} />
+          <Route path="/auth/userRole" component={UserRole} />
         </AuthLayout>
       </Switch>
     </>

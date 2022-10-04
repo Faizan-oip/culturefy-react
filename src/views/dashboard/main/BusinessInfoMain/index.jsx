@@ -1,19 +1,3 @@
-// import { Link } from "react-router-dom";
-// import { useHistory } from "react-router-dom";
-
-//swiper
-import { Swiper, SwiperSlide } from "swiper/react";
-// import SwiperCore, { Navigation, Autoplay } from "swiper";
-
-// Import Swiper styles
-import "swiper/swiper-bundle.min.css";
-import "swiper/components/navigation/navigation.scss";
-
-// import inst5Img from "../../../assets-qa/images/inst5.png";
-import "./index.css";
-import Button from "../../../components/common/button";
-import Heading from "../../../components/common/heading";
-// import TextFieldQa from "../../../components/common/textFieldQa";
 import { useState } from "react";
 import BusinessInfo1 from "./BusinessInfo1";
 import BusinessInfo2 from "./BusinessInfo2";
@@ -52,7 +36,11 @@ const Comp = () => {
 const Main = () => {
    return (
       <>
-       
+         <div className="signForm">
+            <div className="d-flex flex-column h-100 justify-content-center second-column-signup-pages">
+               <Comp />
+            </div>
+         </div>
       </>
    );
 };

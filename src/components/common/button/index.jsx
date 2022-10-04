@@ -17,7 +17,7 @@ function Button(
     return (
         <button
             disabled={disable}
-            className={`${Styles.qaBtn1} ${Styles[variant] } ${Styles[color]} ${Styles[size]}  ${isLoading ? Styles.isLoadinga : Styles.notLoading} `}
+            className={`${Styles.qaBtn1} ${Styles[variant] } ${Styles[color]} ${Styles[size]}  ${isLoading ? Styles.isLoadinga : '' } `}
             onClick={props.onClick}
         >
             {props.icon ? <span className={Styles.btnIcon}>   {props.icon} </span> : ""}

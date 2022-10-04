@@ -9,6 +9,7 @@ import "./index.css";
 
 const SideSlider = () => {
    return (
+      
       <>
          <div className="slideQa">
             <div className="sign-slider overflow-hidden ">
