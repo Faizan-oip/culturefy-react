@@ -18,6 +18,7 @@ import ComingSoon from "../views/dashboard/extrapages/comingsoon";
 import Main from "../views/dashboard/main";
 import AuthLayout from "../layouts/dashboard/Auth";
 import UserRole from "../views/dashboard/main/UserRole";
+import BusinessInfoMain from "../views/dashboard/main/BusinessInfoMain";
 
 const SimpleRouter = () => {
   return (
@@ -42,6 +43,7 @@ const SimpleRouter = () => {
         <AuthLayout>
           <Route path="/auth/main" component={Main} />
           <Route path="/auth/userRole" component={UserRole} />
+          <Route path="/auth/businessInfo" component={BusinessInfoMain} />
         </AuthLayout>
       </Switch>
     </>

@@ -33,7 +33,7 @@ const Comp = () => {
    }
 };
 
-const Main = () => {
+const BusinessInfoMain = () => {
    return (
       <>
          <div className="signForm">
@@ -45,4 +45,4 @@ const Main = () => {
    );
 };
 
-export default Main;
+export default BusinessInfoMain;
