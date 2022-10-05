@@ -1,0 +1,22 @@
+.redDot{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bf161f;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+.redDotLg.redDot{
+    width: 18px;
+    height: 18px;
+}
+.followBtnSq{
+    button{
+        border-radius: 10px;
+    }
+}
+.bGray{
+    border-color: #8d8d8d;
+}

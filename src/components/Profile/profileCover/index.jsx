@@ -35,6 +35,7 @@ function ProfileCover(props) {
               icon={<FaHamburger />}
               variant='transparent' 
               color='gray' 
+              size='sizeAuto'
             />
             <Button 
               label='ATALANTA GA' 
@@ -42,6 +43,7 @@ function ProfileCover(props) {
               icon={<FaMapMarkerAlt />}
               variant='transparent' 
               color='gray'
+              size='sizeAuto'
             />
             <Button 
               label='SHARE' 
@@ -49,6 +51,7 @@ function ProfileCover(props) {
               icon={<FontAwesomeIcon icon={faShare} />}
               variant='transparent' 
               color='gray' 
+              size='sizeAuto'
             />
             <Button
               label='Edit Profile'

@@ -24,6 +24,7 @@ function CreatePost(
               color='whiteColor'
               // icon='fa-solid fa-money-bill-1-wave'
               icon={<FaMoneyBillWave />}
+              size='sizeAuto'
             />
             <Button
               label='Live Video'
@@ -31,6 +32,7 @@ function CreatePost(
               color='whiteColor'
               // icon='fa-solid fa-video'
               icon={<FontAwesomeIcon icon={faVideo} />}
+              size='sizeAuto'
             />
             <Button
               label='Photo/Video'
@@ -38,6 +40,7 @@ function CreatePost(
               color='whiteColor'
               // icon='fa-solid fa-image'
               icon={<FontAwesomeIcon icon={faImage} />}
+              size='sizeAuto'
             />
             <Button
               label='Kudos'
@@ -45,6 +48,7 @@ function CreatePost(
               color='whiteColor'
               // icon='fa-solid fa-face-smile'
               icon={<FontAwesomeIcon icon={faSmile} />}
+              size='sizeAuto'
             />
             <Button
               label='Gif'
@@ -52,6 +56,7 @@ function CreatePost(
               color='whiteColor'
               // icon='fa-solid fa-file'
               icon={<FontAwesomeIcon icon={faFile} />}
+              size='sizeAuto'
             />
             <Button
               label='Event'
@@ -59,6 +64,7 @@ function CreatePost(
               color='whiteColor'
               // icon='fa-solid fa-calendar-days'
               icon={<FontAwesomeIcon icon={faCalendar} />}
+              size='sizeAuto'
             />
           </div>
           <Button

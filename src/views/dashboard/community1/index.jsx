@@ -73,8 +73,8 @@ const Community1 = () => {
                     <Col sm={2}>
                         <Heading label='Resource Groups' variant='heading5' />
                         <div className={Styles.grpRecom}>
-                            <Group grpImage={doneImg} groupName={`Women's Group`} />
-                            <Group grpImage={doneImg} groupName={`Disabilities`} />
+                            <Group image={doneImg} heading={`Women's Group`} />
+                            <Group image={doneImg} heading={`Disabilities`} />
                         </div>
                         <div className={Styles.friendRecom}>
                             <Heading label='Friend Recommendations' variant='heading5' />

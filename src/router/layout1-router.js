@@ -29,6 +29,7 @@ import Profile3 from '../views/dashboard/profiles/profile3';
 import Community from '../views/dashboard/community';
 import Community1 from '../views/dashboard/community1';
 import ResourceGroup from '../views/dashboard/community1/resourceGroup';
+import AccountSetting from '../views/dashboard/accountSetting';
 // const Community = React.lazy(() => import('../views/dashboard/community'));
 
 const Layout1Router = () => {
@@ -66,6 +67,9 @@ const Layout1Router = () => {
                 {/* <Route path="/dashboards/community/socil-feed" component={Community} /> */}
                 <Route path="/dashboards/community1" component={Community1} />
                 <Route path="/dashboards/resourceGroup" component={ResourceGroup} />
+
+                <Route path="/dashboards/accountsetting1" component={AccountSetting} />
+
 
             </Switch>
         </>
