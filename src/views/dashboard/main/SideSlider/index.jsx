@@ -1,19 +1,13 @@
-import { React } from "react";
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from "swiper/react";
+import { React } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import "swiper/swiper-bundle.min.css";
-import "swiper/components/navigation/navigation.scss";
-
-
-import "./index.css";
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/components/navigation/navigation.scss';
+import './index.css';
 
 const SideSlider = () => {
-
-   // const swiperNextBtn = useSwiper();
+   // const swiper  = useSwiper();
    // const swiperPrevBtn = useSwiper();
-
-
    return (
 
       <>
@@ -489,7 +483,7 @@ const SideSlider = () => {
             <div class="buttonSwipper">
                <button
                   class="swipper-custom-button swipper-signup-prev swipper-arrow"
-                  // onClick={() => swiperPrevBtn.slideNext()}
+                  // onClick={() => swiper.slideNext()}
                >
                   <img src={require('../../../../assets-ze/icons/prev-chev.png')} class="chev-img" alt="" />
                </button>
