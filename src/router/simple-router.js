@@ -40,7 +40,7 @@ const SimpleRouter = () => {
         <Route path="/extra-pages/pages-maintenance" component={Maintenance} />
         <Route path="/extra-pages/pages-comingsoon" component={ComingSoon} />
 
-        {/* Sign Up Routes  */}
+        {/* Auth Main Routes  */}
         <AuthLayout>
           <Route path="/auth/userRole" component={UserRole} />
           <Route path="/auth/businessInfo" component={BusinessInfoMain} />
