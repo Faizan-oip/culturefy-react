@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/fontawesome-free-solid'
 import IconButton from '../../../../components/common/iconButton';
 
-import '../index.css'
+// import '../index.css'
 
 const BusinessInfo3 = (props) => {
 

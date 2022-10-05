@@ -299,7 +299,7 @@ span.image-top-right {
     gap: 15px;
 }
 
-.appended-dots ul.slick-dots {
+.appended-dots ul.swipper-dots {
     display: flex;
     padding: 0;
     list-style: none;
@@ -307,7 +307,7 @@ span.image-top-right {
     margin: 0;
 }
 
-.appended-dots ul.slick-dots li button {
+.appended-dots ul.swipper-dots li button {
     font-size: 0;
     padding: 0;
     height: 0.313vw;
@@ -319,11 +319,11 @@ span.image-top-right {
     margin-right: 0.469vw;
 }
 
-.appended-dots ul.slick-dots li.slick-active button {
+.appended-dots ul.swipper-dots li.swipper-active button {
     opacity: 1;
 }
 
-.button-slick .slick-custom-button {
+.buttonSwipper .swipper-custom-button {
     background: transparent;
     height: 1.823vw;
     width: 1.823vw;
@@ -340,31 +340,31 @@ span.image-top-right {
     transition: 0.3s ease-in-out;
 }
 
-.button-slick .slick-custom-button>img {
+.buttonSwipper .swipper-custom-button>img {
     margin: 0 auto;
 }
 
-.button-slick .slick-custom-button[aria-disabled="true"] {
+.buttonSwipper .swipper-custom-button[aria-disabled="true"] {
     opacity: 0.5;
 }
 
-.button-slick .slick-custom-button[aria-disabled="false"]:hover {
+.buttonSwipper .swipper-custom-button[aria-disabled="false"]:hover {
     background: white;
 }
 
-.button-slick .slick-custom-button[aria-disabled="false"]:hover img {
+.buttonSwipper .swipper-custom-button[aria-disabled="false"]:hover img {
     filter: brightness(1) invert(1);
 }
 
-.slider-dots-icons.blackicons .appended-dots ul.slick-dots li button {
+.slider-dots-icons.blackicons .appended-dots ul.swipper-dots li button {
     background: black;
 }
 
-.slider-dots-icons.blackicons .button-slick .slick-custom-button {
+.slider-dots-icons.blackicons .buttonSwipper .swipper-custom-button {
     border-color: black;
 }
 
-.slider-dots-icons.blackicons .button-slick .slick-custom-button img {
+.slider-dots-icons.blackicons .buttonSwipper .swipper-custom-button img {
     filter: brightness(0) invert(0);
 }
 
@@ -607,56 +607,7 @@ img.chev-img {
     font-size: 1vw;
 }
 
-input#remember-me {
-    display: none;
-}
 
-label.remember-custom {
-    height: 0.99vw;
-    width: 2.5vw;
-    background: #bf161f;
-    border: 1px solid #bf161f;
-    position: relative;
-    border-radius: 1vw;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-label.remember-custom:after {
-    content: '';
-    position: absolute;
-    width: 0.365vw;
-    height: 0.677vw;
-    background: white;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0.365vw;
-    border-radius: 12px;
-    transition: 0.3s ease-in-out;
-}
-
-input#remember-me:checked~label.remember-custom {
-    background: #bf161f;
-}
-
-input#remember-me:checked~label.remember-custom:after {
-    background: white;
-    left: 1.563vw;
-}
-
-.remember-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2.604vw;
-}
-
-.custom-checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0.521vw;
-}
 
 .color-red-change {
     color: var(--red);
@@ -678,11 +629,11 @@ input#remember-me:checked~label.remember-custom:after {
     background: #55ACEE;
 }
 
-.slider-signup .slick-track {
+.slider-signup .swipper-track {
     display: flex !important;
 }
 
-.slider-signup .slick-slide {
+.slider-signup .swipper-slide {
     height: inherit !important;
 }
 
@@ -728,19 +679,6 @@ input:focus{
     text-align: center;
 }
 
-
-
-/*QA CSS 9-sep-2022*/
-.already-have-acc{
-    font-size: 20px;
-    font-family: 'Graphik Regular';
-    color: #929292;
-    margin: 20px 0 0;
-}
-.already-have-acc a{
-    color: #bf161f;
-    font-family: 'Graphik Regular';
-}
 
 
 
@@ -821,10 +759,18 @@ input:focus{
     justify-content: space-around;
     cursor: pointer;
 }
-.signForm,
-.slideQa{
+.mainSliderQa{
     display: block;
-    width: 50%;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+}
+.buttonSwipper{
+    display: block;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99;
 }
 .text-white-qa{
     color: #fff;
@@ -910,16 +856,16 @@ input:focus{
         max-width: 36vw;
     }
 
-    .appended-dots ul.slick-dots li {
+    .appended-dots ul.swipper-dots li {
         display: inline-block;
     }
 
-    .appended-dots ul.slick-dots li button {
+    .appended-dots ul.swipper-dots li button {
         height: 8px;
         width: 8px;
     }
 
-    .button-slick .slick-custom-button {
+    .buttonSwipper .swipper-custom-button {
         width: 25px;
         height: 25px;
     }
@@ -973,13 +919,13 @@ input:focus{
         font-size: 31px;
     }
 
-    .appended-dots ul.slick-dots li button {
+    .appended-dots ul.swipper-dots li button {
         width: 10px;
         height: 10px;
         margin-right: 10px;
     }
 
-    .button-slick .slick-custom-button {
+    .buttonSwipper .swipper-custom-button {
         height: 35px;
         width: 35px;
     }
@@ -1122,7 +1068,7 @@ input:focus{
         margin-bottom: 15px;
     }
 
-    .appended-dots ul.slick-dots li {
+    .appended-dots ul.swipper-dots li {
         display: inline-block;
     }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../../../components/common/button';
 import Heading from '../../../../components/common/heading';
 import TextFieldQa from '../../../../components/common/textFieldQa';
-import '../index.css'
+// import '../index.css'
 
 const BusinessInfo1 = (props) => {
 

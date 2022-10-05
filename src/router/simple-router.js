@@ -5,8 +5,8 @@ import { Switch, Route } from "react-router-dom";
 import ConfirmMail from "../views/dashboard/auth/confirm-mail";
 import LockScreen from "../views/dashboard/auth/lock-screen";
 import Recoverpw from "../views/dashboard/auth/recoverpw";
-import SignIn from "../views/dashboard/auth/sign-in";
-import SignUp from "../views/dashboard/auth/sign-up";
+// import SignIn from "../views/dashboard/auth/sign-in";
+// import SignUp from "../views/dashboard/auth/sign-up";
 
 // errors
 import Error404 from "../views/dashboard/errors/error404";
@@ -15,10 +15,11 @@ import Error500 from "../views/dashboard/errors/error500";
 //extrpages
 import Maintenance from "../views/dashboard/extrapages/maintenance";
 import ComingSoon from "../views/dashboard/extrapages/comingsoon";
-import Main from "../views/dashboard/main";
 import AuthLayout from "../layouts/dashboard/Auth";
 import UserRole from "../views/dashboard/main/UserRole";
 import BusinessInfoMain from "../views/dashboard/main/BusinessInfoMain";
+import SignUp from "../views/dashboard/main/signup";
+import SignIn from "../views/dashboard/main/signin";
 
 const SimpleRouter = () => {
   return (
@@ -39,11 +40,12 @@ const SimpleRouter = () => {
         <Route path="/extra-pages/pages-maintenance" component={Maintenance} />
         <Route path="/extra-pages/pages-comingsoon" component={ComingSoon} />
 
-        {/* Sign Up Routes  */}
+        {/* Auth Main Routes  */}
         <AuthLayout>
-          <Route path="/auth/main" component={Main} />
           <Route path="/auth/userRole" component={UserRole} />
           <Route path="/auth/businessInfo" component={BusinessInfoMain} />
+          <Route path="/auth/signup" component={SignUp} />
+          <Route path="/auth/signin" component={SignIn} />
         </AuthLayout>
       </Switch>
     </>

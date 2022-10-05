@@ -1,38 +1,35 @@
-import { React } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { React } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-import "swiper/swiper-bundle.min.css";
-import "swiper/components/navigation/navigation.scss";
-
-
-import "./index.css";
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/components/navigation/navigation.scss';
+import './index.css';
 
 const SideSlider = () => {
+   // const swiper  = useSwiper();
+   // const swiperPrevBtn = useSwiper();
    return (
-      
+
       <>
-         <div className="slideQa">
+         <div className="mainSliderQa">
             <div className="sign-slider overflow-hidden ">
                <Swiper
                   loop
                   spaceBetween={0}
                   centeredSlides={true}
-                  autoplay={{
-                     delay: 5000,
-                     disableOnInteraction: false,
-                  }}
-                  className="list-inline m-0 p-0 "
+                  // navigation
+                  autoplay={false}
+               // className="list-inline m-0 p-0 "
                >
                   <SwiperSlide>
                      <div className="slider-items bg-red">
                         <div className="h-100 padding-settings">
-                           <a href="#">
-                              <img
-                                 src={require("../../../../assets-ze/images/logo.png")}
-                                 className="mb-55 image-logo"
-                                 alt=""
-                              />
-                           </a>
+                           <img
+                              src={require("../../../../assets-ze/images/logo.png")}
+                              className="mb-55 image-logo"
+                              alt=""
+                           />
+
                            <div className="image-slider text-white-qa">
                               <img
                                  src={require("../../../../assets-ze/images/image-sliders/slider-image.png")}
@@ -116,13 +113,18 @@ const SideSlider = () => {
                   <SwiperSlide>
                      <div className="slider-items bg-white">
                         <div className="h-100 padding-settings">
-                           <a href="#">
+                           <img
+                              src={require("../../../../assets-ze/images/logo-black.png")}
+                              className="mb-55 image-logo"
+                              alt=""
+                           />
+                           {/* <a href="#">
                               <img
                                  src={require("../../../../assets-ze/images/logo-black.png")}
                                  className="mb-55 image-logo"
                                  alt=""
                               />
-                           </a>
+                           </a> */}
                            <div className="image-slider text-white-qa">
                               <img
                                  className=""
@@ -223,13 +225,12 @@ const SideSlider = () => {
                   <SwiperSlide>
                      <div className="slider-items bg-lightblue">
                         <div className="h-100 padding-settings">
-                           <a href="#">
-                              <img
-                                 src={require("../../../../assets-ze/images/logo.png")}
-                                 className="mb-55 image-logo"
-                                 alt=""
-                              />
-                           </a>
+                           <img
+                              src={require("../../../../assets-ze/images/logo.png")}
+                              className="mb-55 image-logo"
+                              alt=""
+                           />
+
                            <div className="image-slider text-white-qa">
                               <img
                                  src={require("../../../../assets-ze/images/image-sliders/slider-image-3.png")}
@@ -311,13 +312,18 @@ const SideSlider = () => {
                   <SwiperSlide>
                      <div className="slider-items bg-orange">
                         <div className="h-100 padding-settings">
-                           <a href="#">
+                           <img
+                              src="images/logo.png"
+                              className="mb-55 image-logo"
+                              alt=""
+                           />
+                           {/* <a href="#">
                               <img
                                  src="images/logo.png"
                                  className="mb-55 image-logo"
                                  alt=""
                               />
-                           </a>
+                           </a> */}
                            <div className="image-slider text-white-qa">
                               <img
                                  src={require("../../../../assets-ze/images/image-sliders/slider-image-4.png")}
@@ -392,13 +398,12 @@ const SideSlider = () => {
                   <SwiperSlide>
                      <div className="slider-items bg-black">
                         <div className="h-100 padding-settings">
-                           <a href="#">
-                              <img
-                                 src={require("../../../../assets-ze/images/logo.png")}
-                                 className="mb-55 image-logo"
-                                 alt=""
-                              />
-                           </a>
+                           <img
+                              src={require("../../../../assets-ze/images/logo.png")}
+                              className="mb-55 image-logo"
+                              alt=""
+                           />
+
                            <div className="image-slider text-white-qa">
                               <img
                                  src={require("../../../../assets-ze/images/image-sliders/slider-image-5.png")}
@@ -474,6 +479,20 @@ const SideSlider = () => {
                      </div>
                   </SwiperSlide>
                </Swiper>
+            </div>
+            <div class="buttonSwipper">
+               <button
+                  class="swipper-custom-button swipper-signup-prev swipper-arrow"
+                  // onClick={() => swiper.slideNext()}
+               >
+                  <img src={require('../../../../assets-ze/icons/prev-chev.png')} class="chev-img" alt="" />
+               </button>
+               <button
+                  class="swipper-custom-button swipper-signup-next swipper-arrow"
+                  // onClick={() => swiperNextBtn.slideNext()}
+               >
+                  <img src={require('../../../../assets-ze/icons/next-chev.png')} class="chev-img" alt="" />
+               </button>
             </div>
          </div>
       </>

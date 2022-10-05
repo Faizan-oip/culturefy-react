@@ -12,7 +12,8 @@ function TextFieldQa(
     return (
         <>
             <div className={Styles.TextFieldQa}>
-                <label htmlFor="inp"> {props.label} </label>
+                { props.label ? <label htmlFor="inp"> {props.label} </label> : '' }
+                { props.icon ? props.icon : '' }
                 <input type={type} placeholder={`${placeholder}`} className={` ${Styles.inpuField}`} />
             </div>
         </>
