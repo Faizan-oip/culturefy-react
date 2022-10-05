@@ -1,15 +1,19 @@
+import { React } from "react";
 import { Row, Col, Container } from 'react-bootstrap'
+import AccSidebar from './sidebarAccountSetting';
 import Styles from './styles.module.scss'
 
-import Notification from './notification'
-
-const AccountSetting = () => {
+const AccountSetting = ({ children }) => {
     return (
         <>
-            <Container className={Styles.accountSettingMain}>
+            {/* <Container className={Styles.accountSettingMain}> */}
+            <Container>
                 <Row>
-                    <Col sm={10}>
-                        <Notification />
+                    <Col sm={4}>
+                        <AccSidebar />
+                    </Col>
+                    <Col sm={8}>
+                        <div className={Styles.authLayoutChildrens}>{children}</div>
                     </Col>
                 </Row>
             </Container>

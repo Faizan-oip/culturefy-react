@@ -1,11 +1,7 @@
 import { Row, Col, Container } from 'react-bootstrap'
 
 import globalStyles from '../../../../globalStyles.module.scss'
-
-
 import Styles from './styles.module.scss'
-
-
 
 import inst1Img from '../../../../assets-qa/images/inst1.png'
 import inst2Img from '../../../../assets-qa/images/inst2.png'
@@ -13,8 +9,6 @@ import inst3Img from '../../../../assets-qa/images/inst3.png'
 import inst4Img from '../../../../assets-qa/images/inst4.png'
 import inst5Img from '../../../../assets-qa/images/inst5.png'
 
-
-import { faArrowRight } from '@fortawesome/fontawesome-free-solid'
 import Heading from '../../../../components/common/heading'
 import Group from '../../../../components/common/Group'
 import Button from '../../../../components/common/button'

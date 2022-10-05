@@ -10,7 +10,6 @@ import WithoutLeftSidebar from '../layouts/dashboard/without-leftsidebar'
 import WithoutRightSidebar from '../layouts/dashboard/without-rightsidebar'
 import Layout1 from '../layouts/dashboard/layout-1'
 import Simple from '../layouts/dashboard/simple'
-import AuthLayout from '../layouts/dashboard/Auth'
 
 const IndexRouters = () => {
     return (
