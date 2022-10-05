@@ -47,11 +47,31 @@ h4.larger{
 }
 .GroupMain.borderBottom{
   padding: 10px;
-  padding-right: 7%;
+  // padding-right: 7%;
   border-bottom: 1px solid #f1f2f4;
 }
 .GroupMain.borderTop{
   padding: 10px;
-  padding-right: 7%;
+  // padding-right: 7%;
   border-top: 1px solid #f1f2f4;
+}
+.followButton{
+  button{
+        
+          border: 2px solid #8d8d8d !important;
+          border-radius: 10px;
+          color: black !important;
+  }
+}
+.followBackButton {
+  button {
+    border: 2px solid #bf161f !important;
+    border-radius: 10px;
+    color: #fff !important;
+    background-color: #bf161f;
+  }
+  :hover{
+
+    color: #bf161f !important;
+  }
 }
