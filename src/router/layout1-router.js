@@ -29,7 +29,11 @@ import Profile3 from '../views/dashboard/profiles/profile3';
 import Community from '../views/dashboard/community';
 import Community1 from '../views/dashboard/community1';
 import ResourceGroup from '../views/dashboard/community1/resourceGroup';
-// const Community = React.lazy(() => import('../views/dashboard/community'));
+import AccountSetting from '../views/dashboard/accountSetting';
+import Notification from '../views/dashboard/accountSetting/notification';
+import MessageRequest from '../views/dashboard/accountSetting/messageReq';
+import ProfileSetting from '../views/dashboard/accountSetting/profileSetting';
+import Users from '../views/dashboard/accountSetting/users';
 
 const Layout1Router = () => {
     return (
@@ -57,15 +61,25 @@ const Layout1Router = () => {
                 <Route path="/dashboards/profiles/profile3" component={Profile3} />
 
 
-                
 
 
-                
+
+
                 {/* Community Routes */}
                 <Route path="/dashboards/community" component={Community} />
                 {/* <Route path="/dashboards/community/socil-feed" component={Community} /> */}
                 <Route path="/dashboards/community1" component={Community1} />
                 <Route path="/dashboards/resourceGroup" component={ResourceGroup} />
+
+                {/* Account Setting Routes  */}
+                <AccountSetting>
+                    <Route path="/dashboards/accountsettingqa/notification" component={Notification} />
+                    <Route path="/dashboards/accountsettingqa/messagerequests" component={MessageRequest} />
+                    <Route path="/dashboards/accountsettingqa/mycampaigns" component={Notification} />
+                    <Route path="/dashboards/accountsettingqa/myworkspaces" component={Notification} />
+                    <Route path="/dashboards/accountsettingqa/profilesettings" component={ProfileSetting} />
+                    <Route path="/dashboards/accountsettingqa/users" component={Users} />
+                </AccountSetting>
 
             </Switch>
         </>

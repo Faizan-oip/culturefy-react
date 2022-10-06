@@ -6,8 +6,6 @@ import Button from "../button";
 function Group(
     {
         fontVariant = 'small',
-        redDot = false,
-        groupButtons = false,
         ...props
     }
 ) {
@@ -15,37 +13,22 @@ function Group(
         <div className={`${Styles.GroupMain} ${props.border ? Styles[props.border] : ''}`}>
             <div className={Styles.Group}>
                 <span className={Styles.grpImg}>
-                    <img src={props.grpImage} alt='Group' />
+                    <img src={props.image} alt='Group' />
                 </span>
                 <span className={Styles.grpName}>
-                    <h4 className={Styles[fontVariant]}> {props.groupName} </h4>
-                    {props.groupMembers ? <p> {props.groupMembers} members </p> : ''}
+                    <h4 className={Styles[fontVariant]}> {props.heading} </h4>
+                    {props.subHeading ? <p> {props.subHeading} </p> : ''}
                 </span>
             </div>
+
             {
-                redDot ?
-                    <span className={Styles.redDot}>
+                props.action ?
+                    <span>
+                        {props.action}
                     </span>
                     : ''
             }
-            {
-                groupButtons ?
-                    <div className={Styles.groupActionBtns}>
-                        <Button
-                            label='View'
-                            variant='transparent'
-                            color='primary'
-                            size='smallBtn'
-                        />
-                        <Button
-                            label='Join'
-                            variant='filled'
-                            color='primary'
-                            size='smallBtn'
-                        />
-                    </div>
-                    : ''
-            }
+            
         </div>
     );
 }
@@ -53,12 +36,11 @@ function Group(
 
 
 Group.propTypes = {
-    grpImage: PropTypes.any.isRequired,
+    image: PropTypes.any.isRequired,
     fontVariant: PropTypes.string,
-    groupName: PropTypes.string.isRequired,
-    groupMembers: PropTypes.string,
-    redDot: PropTypes.bool,
-    groupButtons: PropTypes.bool,
+    heading: PropTypes.string.isRequired,
+    subHeading: PropTypes.string,
     border: PropTypes.string,
+    action: PropTypes.any,
 };
 export default Group;
