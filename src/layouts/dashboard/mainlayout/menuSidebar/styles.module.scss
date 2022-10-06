@@ -2,6 +2,7 @@
   display: block;
   width: 260px;
   height: 100%;
+  box-shadow: 10px 3px 30px #dcdfe4;
   ul {
     margin: 0;
     padding: 0;
@@ -49,7 +50,7 @@
     transition: all 0.5s ease-in-out;
   }
   img {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .caretIcon {
     position: absolute;
