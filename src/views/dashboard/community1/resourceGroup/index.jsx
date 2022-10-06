@@ -7,6 +7,9 @@ import Styles from './index.module.scss'
 import inst3Img from '../../../../assets-qa/images/inst3.png'
 import ChatSuggestion from './chatSuggestion';
 
+import globalStyles from '../../../../globalStyles.module.scss'
+import Button from '../../../../components/common/button';
+
 
 
 
@@ -28,20 +31,20 @@ const ResourceGroup = () => {
                         />
                         <div className={Styles.resourceGroupList}>
                             <Group
-                                grpImage={inst3Img}
-                                groupName={`Women's Group`}
-                                groupMembers='100+'
+                                image={inst3Img}
+                                heading={`Women's Group`}
+                                subHeading='100+ members'
                                 fontVariant='large'
-                                redDot={true}
                                 border='borderBottom'
+                                action={<span className={`${globalStyles.redDot} ${globalStyles.redDotLg}`}></span>}
                             />
                             <Group
-                                grpImage={inst3Img}
-                                groupName={`Disabilities`}
-                                groupMembers='100+'
+                                image={inst3Img}
+                                heading={`Disabilities`}
+                                subHeading='100+ members'
                                 fontVariant='large'
-                                redDot={true}
                                 border='borderBottom'
+                                action={<span className={`${globalStyles.redDot} ${globalStyles.redDotLg}`}></span>}
                             />
                         </div>
                         <Row className={Styles.spaceBetween}>
@@ -65,39 +68,99 @@ const ResourceGroup = () => {
                             <Col sm={12}>
 
                                 <Group
-                                    grpImage={inst3Img}
-                                    groupName={`African Heritage`}
-                                    groupMembers='100+'
+                                    image={inst3Img}
+                                    heading={`African Heritage`}
+                                    subHeading='100+ members'
                                     fontVariant='small'
-                                    groupButtons={true}
                                     border='borderBottom'
+                                    action={
+                                        <div>
+                                            <Button
+                                                label='View'
+                                                variant='transparent'
+                                                color='primary'
+                                                size='smallBtn'
+                                            />
+                                            <Button
+                                                label='Join'
+                                                variant='filled'
+                                                color='primary'
+                                                size='smallBtn'
+                                            />
+                                        </div>
+                                    }
                                 />
 
                                 <Group
-                                    grpImage={inst3Img}
-                                    groupName={`Asian Pacific`}
-                                    groupMembers='100+'
+                                    image={inst3Img}
+                                    heading={`Asian Pacific`}
+                                    subHeading='100+ members'
                                     fontVariant='small'
-                                    groupButtons={true}
                                     border='borderBottom'
+                                    action={
+                                        <div>
+                                            <Button
+                                                label='View'
+                                                variant='transparent'
+                                                color='primary'
+                                                size='smallBtn'
+                                            />
+                                            <Button
+                                                label='Join'
+                                                variant='filled'
+                                                color='primary'
+                                                size='smallBtn'
+                                            />
+                                        </div>
+                                    }
                                 />
 
                                 <Group
-                                    grpImage={inst3Img}
-                                    groupName={`Hispanic + Latino`}
-                                    groupMembers='100+'
+                                    image={inst3Img}
+                                    heading={`Hispanic + Latino`}
+                                    subHeading='100+ members'
                                     fontVariant='small'
-                                    groupButtons={true}
                                     border='borderBottom'
+                                    action={
+                                        <div>
+                                            <Button
+                                                label='View'
+                                                variant='transparent'
+                                                color='primary'
+                                                size='smallBtn'
+                                            />
+                                            <Button
+                                                label='Join'
+                                                variant='filled'
+                                                color='primary'
+                                                size='smallBtn'
+                                            />
+                                        </div>
+                                    }
                                 />
 
                                 <Group
-                                    grpImage={inst3Img}
-                                    groupName={`Veterans`}
-                                    groupMembers='100+'
+                                    image={inst3Img}
+                                    heading={`Veterans`}
+                                    subHeading='100+ members'
                                     fontVariant='small'
-                                    groupButtons={true}
                                     border='borderBottom'
+                                    action={
+                                        <div>
+                                            <Button
+                                                label='View'
+                                                variant='transparent'
+                                                color='primary'
+                                                size='smallBtn'
+                                            />
+                                            <Button
+                                                label='Join'
+                                                variant='filled'
+                                                color='primary'
+                                                size='smallBtn'
+                                            />
+                                        </div>
+                                    }
                                 />
 
                             </Col>

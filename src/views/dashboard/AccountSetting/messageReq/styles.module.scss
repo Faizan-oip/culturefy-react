@@ -1,0 +1,22 @@
+.chatcount {
+    display: block;
+    margin-left: auto;
+    width: 18px;
+    height: 18px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    background: #be001b;
+    color: #fff;
+    border-radius: 4px;
+}
+.usermsgbox {
+    max-height: 600px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.usermsgbox li{
+    margin: 10px 0;
+ }

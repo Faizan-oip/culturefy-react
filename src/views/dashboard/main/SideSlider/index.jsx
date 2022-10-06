@@ -3,11 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/components/navigation/navigation.scss';
+// import 'swiper/components/pagination/pagination.scss';
 import './index.css';
 
 const SideSlider = () => {
-   // const swiper  = useSwiper();
-   // const swiperPrevBtn = useSwiper();
    return (
 
       <>
@@ -17,7 +16,8 @@ const SideSlider = () => {
                   loop
                   spaceBetween={0}
                   centeredSlides={true}
-                  // navigation
+                  navigation
+                  // pagination
                   autoplay={false}
                // className="list-inline m-0 p-0 "
                >
@@ -480,7 +480,7 @@ const SideSlider = () => {
                   </SwiperSlide>
                </Swiper>
             </div>
-            <div class="buttonSwipper">
+            {/* <div class="buttonSwipper">
                <button
                   class="swipper-custom-button swipper-signup-prev swipper-arrow"
                   // onClick={() => swiper.slideNext()}
@@ -493,7 +493,7 @@ const SideSlider = () => {
                >
                   <img src={require('../../../../assets-ze/icons/next-chev.png')} class="chev-img" alt="" />
                </button>
-            </div>
+            </div> */}
          </div>
       </>
    );
