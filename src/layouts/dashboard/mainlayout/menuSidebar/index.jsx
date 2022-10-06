@@ -10,6 +10,8 @@ import downIcon from "../../../../assets-qa/images/downIcon.svg";
 import educationIcon from "../../../../assets-qa/images/educationIcon.svg";
 import rewardIcon from "../../../../assets-qa/images/rewardIcon.svg";
 import communityIcon from "../../../../assets-qa/images/communityIcon.svg";
+import campaignIcon from "../../../../assets-qa/images/compaignIcon.png";
+
 import Button from "../../../../components/common/button";
 
 import { Link } from "react-router-dom";
@@ -36,7 +38,7 @@ function MenuSidebar() {
     {
       id: "Learning",
       title: "Learning",
-      icon: culIcon2,
+      icon: educationIcon,
       subMenu: [
         {
           id: "Courses",
@@ -59,7 +61,7 @@ function MenuSidebar() {
     {
       id: "Rewards",
       title: "Rewards",
-      icon: culIcon2,
+      icon: rewardIcon,
       subMenu: [
         {
           id: "Redeem",
@@ -70,7 +72,7 @@ function MenuSidebar() {
     {
       id: "Community",
       title: "Community",
-      icon: culIcon2,
+      icon: communityIcon,
       subMenu: [
         {
           id: "ResourceGroups",
@@ -94,7 +96,7 @@ function MenuSidebar() {
     {
       id: "Campaign",
       title: "Campaign",
-      icon: culIcon2,
+      icon: campaignIcon,
       subMenu: [
         {
           id: "Workspaces",
@@ -138,19 +140,12 @@ function MenuSidebar() {
           <ul>
             {side_menu.map((menu) => (
               <li
-                // onClick={() =>
-                //   seletedItem == menu.id
-                //     ? setSelectedItem("")
-                //     : setSelectedItem(menu.id)
-                // }
                 className={`${Styles.navLinkQa} ${Styles.navLinkQaMain} ${
                   menu.id == seletedItem ? Styles.active : Styles.hide
                 }`}
               >
                 <div
                   key={menu.id}
-                  href="#"
-                  // className={menu.id == seletedItem ? "active" : "hide"}
                 >
                   <div className="d-flex align-items-center gap-3">
                     <img src={menu.icon} className={Styles.iconImg} />
