@@ -4,8 +4,8 @@ import Styles from './styles.module.scss'
 import Input from '../../common/Input';
 import Button from '../../common/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FaMoneyBillWave } from 'react-icons/fa';
 import {  faVideo , faImage , faSmile , faFile , faCalendar } from '@fortawesome/fontawesome-free-solid'
+import { FaMoneyBillWave } from 'react-icons/fa';
 
 function CreatePost(
   {

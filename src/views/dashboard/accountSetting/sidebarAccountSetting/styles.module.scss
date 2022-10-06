@@ -13,11 +13,28 @@
       border-bottom: 2px solid #efefef;
       display: block;
       cursor: pointer;
-      font-family: "Grpahik Regular";
-      font-size: 20px;
-      color: #191919;
-      a {
+      .linkAcc {
+        font-size: 20px;
         color: #191919;
+        font-family: "Grpahik Regular";
+        flex: 0 0 100%;
+        display: block;
+        position: relative;
+        .icon{
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #bf161f;
+          opacity: 0;
+        }
+      }
+      .activeLink {
+        color: #000;
+        font-family: "Grpahik Medium";
+        .icon{
+          opacity: 1;
+        }
       }
     }
   }

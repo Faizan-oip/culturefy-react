@@ -19,7 +19,9 @@ const Notification = () => {
             <Container className={Styles.notificationMain}>
                 <Row>
                     <Col sm={10}>
-                        <Heading label='Activity' color='secondaryText' variant='heading3' />
+                        <div className={globalStyles.pBt20}>
+                            <Heading label='Activity' color='secondaryText' variant='heading3' />
+                        </div>
                         <Group
                             image={inst1Img}
                             heading='Yazdan Khan Commented on your photo.'

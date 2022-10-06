@@ -6,7 +6,6 @@ import Styles from './styles.module.scss'
 const AccountSetting = ({ children }) => {
     return (
         <>
-            {/* <Container className={Styles.accountSettingMain}> */}
             <Container>
                 <Row>
                     <Col sm={4}>
