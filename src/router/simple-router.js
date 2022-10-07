@@ -20,6 +20,8 @@ import UserRole from "../views/dashboard/main/UserRole";
 import BusinessInfoMain from "../views/dashboard/main/BusinessInfoMain";
 import SignUp from "../views/dashboard/main/signup";
 import SignIn from "../views/dashboard/main/signin";
+import MainLayout from "../layouts/dashboard/mainlayout";
+// import MainLayout from "../layouts/dashboard/mainlayout";
 
 const SimpleRouter = () => {
   return (
@@ -40,6 +42,8 @@ const SimpleRouter = () => {
         <Route path="/extra-pages/pages-maintenance" component={Maintenance} />
         <Route path="/extra-pages/pages-comingsoon" component={ComingSoon} />
 
+        <Route path="/layout/mainlayout" component={MainLayout} />
+
         {/* Auth Main Routes  */}
         <AuthLayout>
           <Route path="/auth/userRole" component={UserRole} />
@@ -47,6 +51,8 @@ const SimpleRouter = () => {
           <Route path="/auth/signup" component={SignUp} />
           <Route path="/auth/signin" component={SignIn} />
         </AuthLayout>
+
+
       </Switch>
     </>
   );

@@ -19,6 +19,7 @@ const IndexRouters = () => {
                 <Route path="/without-rightsidebar" component={WithoutRightSidebar}></Route>
                 <Route path="/auth" component={Simple}></Route>
                 <Route path="/errors" component={Simple}></Route>
+                <Route path="/layout" component={Simple}></Route>
                 <Route path="/extra-pages" component={Simple}></Route>
                 <Route path="/dashboards" component={Layout1}></Route>
                 <Route path="/dashboard" component={Default}></Route>

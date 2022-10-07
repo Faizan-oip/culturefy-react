@@ -34,6 +34,7 @@ import Notification from '../views/dashboard/accountSetting/notification';
 import MessageRequest from '../views/dashboard/accountSetting/messageReq';
 import ProfileSetting from '../views/dashboard/accountSetting/profileSetting';
 import Users from '../views/dashboard/accountSetting/users';
+// import MainLayout from '../layouts/dashboard/mainlayout';
 
 const Layout1Router = () => {
     return (
@@ -71,6 +72,9 @@ const Layout1Router = () => {
                 <Route path="/dashboards/community1" component={Community1} />
                 <Route path="/dashboards/resourceGroup" component={ResourceGroup} />
 
+
+                {/* <Route path="/dashboards/mainlayout" component={MainLayout} /> */}
+
                 {/* Account Setting Routes  */}
                 <AccountSetting>
                     <Route path="/dashboards/accountsettingqa/notification" component={Notification} />
@@ -80,6 +84,8 @@ const Layout1Router = () => {
                     <Route path="/dashboards/accountsettingqa/profilesettings" component={ProfileSetting} />
                     <Route path="/dashboards/accountsettingqa/users" component={Users} />
                 </AccountSetting>
+
+
 
             </Switch>
         </>

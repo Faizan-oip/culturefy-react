@@ -1,0 +1,22 @@
+:root{
+    --asideLeft-width: 120px;
+    --asideRight-width: 260px;
+}
+.mainWrapperqa{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mainContent{
+    display: block;
+    padding: 30px 100px 30px 50px;
+    width: calc(100% - var(--asideLeft-width) - var(--asideRight-width));
+    margin-left: calc( var(--asideLeft-width) + var(--asideRight-width) );
+}
