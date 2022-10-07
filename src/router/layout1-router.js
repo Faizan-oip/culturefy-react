@@ -34,7 +34,7 @@ import Notification from '../views/dashboard/accountSetting/notification';
 import MessageRequest from '../views/dashboard/accountSetting/messageReq';
 import ProfileSetting from '../views/dashboard/accountSetting/profileSetting';
 import Users from '../views/dashboard/accountSetting/users';
-import MainLayout from '../layouts/dashboard/mainlayout';
+// import MainLayout from '../layouts/dashboard/mainlayout';
 
 const Layout1Router = () => {
     return (
@@ -73,7 +73,7 @@ const Layout1Router = () => {
                 <Route path="/dashboards/resourceGroup" component={ResourceGroup} />
 
 
-                <Route path="/dashboards/mainlayout" component={MainLayout} />
+                {/* <Route path="/dashboards/mainlayout" component={MainLayout} /> */}
                 
                 {/* Account Setting Routes  */}
                 <AccountSetting>

@@ -1,33 +1,32 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/fontawesome-free-solid";
+import React, { useState } from "react";
 import Styles from "./styles.module.scss";
 import MainSidebar from "./mainSidebar";
 import MenuSidebar from "./menuSidebar";
-import { Container, Row, Col } from "react-bootstrap";
 import Header from "./header";
+import PageHeader from "./pageHeader";
+import ProfileBox from "../../../components/common/profileBox";
+import userImage from "../../../assets-qa/images/admin-img.png";
 
 function MainLayout() {
+  const [showDropDown, setShowDropDown] = useState(false);
+  console.log(showDropDown);
   return (
-    <div>
-      <Container>
-        <Row>
-          <Col md={4}>
-            <div className={Styles.sidebar}>
-              <MainSidebar />
-              <MenuSidebar />
-            </div>
-          </Col>
-          <Col md={8}>
-          <Header />
-          </Col>
-        </Row>
-      </Container>
+    <div className={Styles.mainWrapperqa}>
+      <aside className={Styles.sidebar}>
+        <MainSidebar />
+        <MenuSidebar />
+      </aside>
+      <div className={Styles.mainContent}>
+        <Header onClick={() => setShowDropDown(!showDropDown)} />
+        <PageHeader />
+        <ProfileBox
+          userImg={userImage}
+          show={showDropDown}
+          brandProgress="77"
+        />
+      </div>
     </div>
   );
 }
-
-MainLayout.propTypes = {};
 
 export default MainLayout;
