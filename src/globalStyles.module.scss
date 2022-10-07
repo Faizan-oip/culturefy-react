@@ -1,4 +1,4 @@
-.redDot{
+.redDot {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -8,20 +8,32 @@
     top: 40%;
     right: 5%;
 }
-.redDotLg.redDot{
+
+.redDotLg.redDot {
     width: 18px;
     height: 18px;
 }
-.followBtnSq{
-    button{
+
+.followBtnSq {
+    button {
         border-radius: 8px;
         font-size: 14px;
         padding: 5px 10px;
     }
 }
-.bGray{
+
+.bGray {
     border-color: #8d8d8d;
 }
-.pBt20{
+
+.pBt20 {
     padding-bottom: 20px;
+}
+
+div {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 }
