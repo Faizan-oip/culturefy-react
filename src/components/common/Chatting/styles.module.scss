@@ -1,0 +1,128 @@
+.userimg {
+	margin-right: 10px;
+	position: static;
+}
+
+.gap2 {
+	gap: 0.5rem !important;
+}
+
+.userimg img {
+	width: 70px;
+}
+
+.online {
+	display: flex;
+	justify-content: space-between;
+}
+
+.userInfo {
+	position: relative;
+}
+
+.userInfo {
+	span {
+		color: #929292;
+	}
+}
+
+.userInfo {
+	p {
+		display: flex;
+		align-items: center;
+		font-weight: 100;
+
+	}
+}
+
+.onlineIcon {
+	width: 7px;
+	height: 7px;
+	border-radius: 50px;
+	background-color: #BDBDBD;
+	position: absolute;
+	top: 27px;
+	right: 0;
+}
+
+.onlineIcon.online {
+	background-color: #38cb89;
+}
+
+.MainChatBox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Usericons {
+	display: flex;
+
+	svg {
+		font-size: 22px;
+		margin-right: 20px;
+	}
+
+}
+
+.MainChatBox {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.chatcenterdate {
+	text-align: center;
+	color: #ccc;
+	font-size: 14px;
+	margin: 30px;
+}
+
+.chatmeassage {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+
+.chatmeassage {
+	img {
+		max-width: 40px;
+	}
+}
+
+// .sender {
+// 	background-color: red;
+// }
+
+// .reciever {
+// 	background-color: #38cb89;
+// }
+
+.chatmeassagetext {
+	max-width: 80%;
+	flex: 80%
+}
+
+.iconbtn {
+	background-color: transparent;
+	border: transparent;
+	outline: none;
+	font-size: 16px;
+}
+
+.chattime {
+	font-size: 14px;
+	color: #929292;
+	font-weight: 100;
+	text-align: right;
+	transform: translateY(30px);
+}
+
+.Chatuserimg {
+	position: relative;
+}
+
+.sender {
+	display: flex;
+	flex-direction: row-reverse;
+}

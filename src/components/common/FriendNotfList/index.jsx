@@ -12,21 +12,28 @@ function FriendNotfList(props) {
         <div className={Styles.usermsg}>
           <div className={Styles.avatar}>
             <img src={props.userImg} alt='user' />
+
+            <span className={`${Styles.onlineIcon} ${props.status === 'online' ? Styles.online : ''} `}></span>
+
           </div>
           <div className={Styles.msg}>
             <h4>{props.username} </h4>
             <p>{props.subtext}</p>
           </div>
 
-        </div>
-        <div>
-        <p className={`${Styles.chattime} ${props.time === 'online' ? Styles.online : ''} `}>
-          {
-            props.time === 'online' ? '' : props.time
-          }
-        </p>
 
-        {props.action}
+
+        </div>
+
+
+        <div>
+          <p className={`${Styles.chattime}  `}>
+            {
+              props.time
+            }
+          </p>
+
+          {props.action}
         </div>
 
       </a>
