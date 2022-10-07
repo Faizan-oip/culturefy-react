@@ -1,0 +1,76 @@
+.chatcount {
+    display: block;
+    margin-left: auto;
+    width: 18px;
+    height: 18px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    background: #be001b;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.usermsgbox {
+    max-height: 600px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.usermsgbox li {
+    margin: 15px 0;
+}
+
+.chatstar.active {
+    color: #38cb89;
+
+}
+
+.chatstar {
+    font-size: 10px;
+    color: #929292;
+    text-align: right;
+}
+
+.searchWithIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchWithIcon {
+    .searchMain {
+        max-width: 80%;
+        margin-left: 0;
+
+        width: 80%;
+    }
+}
+
+.usermsgbox::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+/* width */
+.usermsgbox::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+}
+
+/* Track */
+.usermsgbox::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.usermsgbox::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.161);
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+.usermsgbox::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+
+}

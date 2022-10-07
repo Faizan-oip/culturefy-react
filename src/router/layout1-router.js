@@ -74,7 +74,7 @@ const Layout1Router = () => {
 
 
                 {/* <Route path="/dashboards/mainlayout" component={MainLayout} /> */}
-                
+
                 {/* Account Setting Routes  */}
                 <AccountSetting>
                     <Route path="/dashboards/accountsettingqa/notification" component={Notification} />
@@ -85,7 +85,7 @@ const Layout1Router = () => {
                     <Route path="/dashboards/accountsettingqa/users" component={Users} />
                 </AccountSetting>
 
-                
+
 
             </Switch>
         </>
